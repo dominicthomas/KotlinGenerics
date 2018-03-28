@@ -1,15 +1,17 @@
+package com.klloyds.kotlin
+
 import java.util.ArrayList
 
 fun main(args: Array<String>) {
 
     // Covariance - Subtype ok
     val animal: Animal = Dog() // ok
-    // val dog: Dog = Animal() // not ok
-    // val dog = Animal() as Dog // not ok - ClassCastException :(
-    // printName(animal) // ok
+    // val dog: com.klloyds.kotlin.Dog = com.klloyds.kotlin.Animal() // not ok
+    // val dog = com.klloyds.kotlin.Animal() as com.klloyds.kotlin.Dog // not ok - ClassCastException :(
+    // com.klloyds.kotlin.printName(animal) // ok
 
 
-    // Kotlin - Declaration-site Variance
+    // Kotlin - Declaration-site com.klloyds.java.Variance
 
     // Covariance - Generics with "out" keyword / same as "extends"
     val integers: ArrayList<Int> = arrayListOf(1, 2, 3)

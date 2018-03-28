@@ -1,3 +1,5 @@
+package com.klloyds.java;
+
 import com.sun.org.apache.xerces.internal.xs.datatypes.ObjectList;
 
 import java.math.BigInteger;
@@ -10,12 +12,12 @@ public class Variance {
 
         // Covariance - Subtype ok
         final Animal animal = new Dog(); // ok
-        // final kotlin.Dog dog = new kotlin.Animal(); // not ok
-        // final kotlin.Dog dog = (kotlin.Dog) new kotlin.Animal(); // not ok - ClassCastException
-        // kotlin.printName(animal); // ok
+        // final kotlin.com.klloyds.kotlin.Dog dog = new kotlin.com.klloyds.kotlin.Animal(); // not ok
+        // final kotlin.com.klloyds.kotlin.Dog dog = (kotlin.com.klloyds.kotlin.Dog) new kotlin.com.klloyds.kotlin.Animal(); // not ok - ClassCastException
+        // kotlin.com.klloyds.kotlin.printName(animal); // ok
 
 
-        // Java - Use-site Variance
+        // Java - Use-site com.klloyds.java.Variance
 
         // Covariance - Generics with wildcard "extends"
         final List<Integer> integers = new ArrayList<>();
